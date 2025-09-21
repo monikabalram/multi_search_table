@@ -32,7 +32,7 @@ function App() {
     setLoadingError("");
     try {
       const loadPromises = csvFiles.map(({ name, file }) => {
-        return fetch(`/data/${file}`)
+        return fetch(`/${file}`)
           .then((response) => {
             if (!response.ok) {
               throw new Error(`Failed to load ${file}`);
