@@ -11,7 +11,7 @@ import Papa from "papaparse";
 import "./App.css";
 
 function App() {
-  const [data, setData] = useState({});
+const [data, setData] = useState({});
   const [selectedTables, setSelectedTables] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filters, setFilters] = useState({});
@@ -22,7 +22,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [loadingError, setLoadingError] = useState("");
 
-  // Load CSV files on component mount
   useEffect(() => {
     loadCSVFiles();
   }, []);
@@ -32,7 +31,7 @@ function App() {
     setLoadingError("");
     try {
       const loadPromises = csvFiles.map(({ name, file }) => {
-        return fetch(`/${file}`)
+        return fetch(file)
           .then((response) => {
             if (!response.ok) {
               throw new Error(`Failed to load ${file}`);
@@ -85,12 +84,10 @@ function App() {
           const tableName = file.name.replace(".csv", "");
           const parsedData = results.data;
 
-          // Filter out rows that are completely empty
           const filteredData = parsedData.filter((row) =>
             Object.values(row).some((value) => value !== null && value !== "")
           );
 
-          // Correctly update the data and uploadedTables states
           setData((prevData) => ({ ...prevData, [tableName]: filteredData }));
           setSelectedTables((prevTables) => [
             ...new Set([...prevTables, tableName]),
@@ -147,7 +144,7 @@ function App() {
     setSearchTerm("");
     setFilters({});
   };
-const filteredResults = useMemo(() => {
+  const filteredResults = useMemo(() => {
     const results = [];
 
     for (const tableName in data) {
@@ -162,12 +159,10 @@ const filteredResults = useMemo(() => {
         columns: [],
       };
 
-      // Define search fields dynamically if not present in config
       const searchFields = config.searchFields.length > 0
         ? config.searchFields
         : Object.keys(filteredData[0]).filter(key => typeof filteredData[0][key] === 'string');
 
-      // Filter by search term
       if (searchTerm) {
         const lowerCaseSearchTerm = searchTerm.toLowerCase();
         filteredData = filteredData.filter((row) => {
@@ -178,7 +173,6 @@ const filteredResults = useMemo(() => {
         });
       }
 
-      // Filter by advanced filters
       const tableFilters = filters[tableName];
       if (tableFilters) {
         filteredData = filteredData.filter((row) => {
@@ -206,54 +200,51 @@ const filteredResults = useMemo(() => {
     }
     return results;
   }, [data, selectedTables, searchTerm, filters]);
-  if (loading) {
-    return <LoadingSpinner />;
-  }
 
-  if (loadingError) {
-    return <ErrorDisplay error={loadingError} onRetry={loadCSVFiles} />;
-  }
-
+  // Render the application.
   return (
-    <div className="min-h-screen bg-gray-100 p-6 lg:p-12">
-      <div className="max-w-full mx-auto flex flex-col lg:flex-row gap-6 h-full">
-        <aside className="lg:w-[40%] space-y-6 flex flex-col h-full">
-          <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-          <TableSelection
-            selectedTables={selectedTables}
-            handleTableToggle={handleTableToggle}
-            data={data}
-            uploadedTables={uploadedTables}
-            removeUploadedTable={removeUploadedTable}
-            onClearAll={onClearAll}
-          />
-          <AdvancedFilters
-            showAdvancedFilters={showAdvancedFilters}
-            setShowAdvancedFilters={setShowAdvancedFilters}
-            selectedTables={selectedTables}
-            filters={filters}
-            handleFilterChange={handleFilterChange}
-          />
-          <CSVUpload
-            dragOver={dragOver}
-            setDragOver={setDragOver}
-            handleFileUpload={handleFileUpload}
-            showUpload={showUpload}
-            setShowUpload={setShowUpload}
-            uploadedTables={uploadedTables}
-            data={data}
-            removeUploadedTable={removeUploadedTable}
-          />
-        </aside>
-        <main className="lg:w-[60%] flex-1 flex flex-col h-full">
-          <ResultsDisplay
-            filteredResults={filteredResults}
-            searchTerm={searchTerm}
-          />
-        </main>
+    <>
+      <div className="min-h-screen bg-gray-100 p-6 lg:p-12">
+        <div className="max-w-full mx-auto flex flex-col lg:flex-row gap-6 h-full">
+          <aside className="lg:w-[40%] space-y-6 flex flex-col h-full">
+            <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            <TableSelection
+              selectedTables={selectedTables}
+              handleTableToggle={handleTableToggle}
+              data={data}
+              uploadedTables={uploadedTables}
+              removeUploadedTable={removeUploadedTable}
+              onClearAll={onClearAll}
+            />
+            <AdvancedFilters
+              showAdvancedFilters={showAdvancedFilters}
+              setShowAdvancedFilters={setShowAdvancedFilters}
+              selectedTables={selectedTables}
+              filters={filters}
+              handleFilterChange={handleFilterChange}
+            />
+            <CSVUpload
+              dragOver={dragOver}
+              setDragOver={setDragOver}
+              handleFileUpload={handleFileUpload}
+              showUpload={showUpload}
+              setShowUpload={setShowUpload}
+              uploadedTables={uploadedTables}
+              data={data}
+              removeUploadedTable={removeUploadedTable}
+            />
+          </aside>
+          <main className="lg:w-[60%] flex-1 flex flex-col h-full">
+            {loading ? <LoadingSpinner /> : loadingError ? <ErrorDisplay error={loadingError} onRetry={loadCSVFiles} /> :
+              <ResultsDisplay
+                filteredResults={filteredResults}
+                searchTerm={searchTerm}
+              />}
+          </main>
+        </div>
       </div>
-    </div>
-  );
+    </>
+  )
 }
 
 export default App;
