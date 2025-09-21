@@ -24,7 +24,7 @@ To run this project on your local machine, follow these steps:
 
 Clone the Repository:
 
-git clone https://github.com/monikabalram/multi_search_table.git
+git clone [https://github.com/monikabalram/multi_search_table.git]
 cd multi_search_table
 
 Install Dependencies:
@@ -43,3 +43,7 @@ If you want to create a production-ready build of the application, run:
 npm run build
 
 This will generate a dist folder containing the optimized static files.
+
+Publish Site
+You can view the live application here:
+https://monikabalram.github.io/multi_search_table/
