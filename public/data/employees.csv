@@ -1,0 +1,16 @@
+id,name,department,salary,location,experience,status,skills,hire_date,manager
+1,John Smith,Engineering,75000,San Francisco,5,Active,JavaScript React Node.js,2019-03-15,Sarah Connor
+2,Sarah Johnson,Marketing,65000,New York,3,Active,SEO Content Analytics,2021-06-01,Mike Davis
+3,Mike Chen,Engineering,85000,Seattle,7,Active,Python Django PostgreSQL,2017-08-20,Sarah Connor
+4,Emily Davis,Sales,60000,Chicago,2,Inactive,CRM Negotiation Presentations,2022-01-10,Robert Wilson
+5,Alex Wilson,HR,55000,Austin,4,Active,Recruitment Training Policies,2020-05-12,Jennifer Lee
+6,David Rodriguez,Engineering,92000,San Francisco,8,Active,Java Spring Microservices,2016-02-28,Sarah Connor
+7,Jennifer Lee,Management,95000,New York,12,Active,Leadership Strategy Planning,2012-11-05,CEO
+8,Robert Wilson,Sales,78000,Chicago,6,Active,B2B Sales Account Management,2018-09-14,Jennifer Lee
+9,Lisa Brown,Marketing,58000,Austin,2,Active,Social Media Brand Management,2022-07-03,Mike Davis
+10,Kevin Park,Engineering,71000,Seattle,4,Active,React TypeScript AWS,2020-10-18,Sarah Connor
+11,Maria Garcia,HR,52000,Austin,3,Active,Employee Relations Benefits,2021-04-22,Alex Wilson
+12,James Taylor,Sales,66000,New York,5,Active,Enterprise Sales SaaS,2019-12-08,Robert Wilson
+13,Amanda White,Engineering,79000,San Francisco,6,Active,DevOps Kubernetes Docker,2018-03-25,Sarah Connor
+14,Chris Johnson,Marketing,61000,Chicago,4,Active,Digital Marketing PPC,2020-08-17,Mike Davis
+15,Rachel Kim,Engineering,88000,Seattle,9,Active,Machine Learning AI Python,2015-05-30,Sarah Connor

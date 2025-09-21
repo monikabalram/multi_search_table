@@ -1,0 +1,21 @@
+id,customer,item,quantity,total,date,status,restaurant,payment_method,delivery_time
+O001,Alice Cooper,Pizza Margherita,2,25.98,2024-09-20,Delivered,Marios Pizza Palace,Credit Card,35
+O002,Bob Martinez,Burger Deluxe,1,12.99,2024-09-19,Preparing,Burger Junction,Cash,25
+O003,Carol White,Pizza Pepperoni,1,14.99,2024-09-18,Delivered,Pizza Corner,Debit Card,40
+O004,David Brown,Sushi Platter,1,34.99,2024-09-17,Delivered,Sushi Zen,Credit Card,0
+O005,Eva Garcia,Pizza Hawaiian Large,1,18.99,2024-09-16,Cancelled,Pizza Express,Credit Card,0
+O006,Frank Wilson,Beef Tacos,3,21.99,2024-09-15,Delivered,Taco Fiesta,Cash,30
+O007,Grace Chen,Prime Steak,1,45.99,2024-09-14,Delivered,The Steakhouse,Credit Card,0
+O008,Henry Davis,Pad Thai,2,19.98,2024-09-13,Delivered,Noodle House,Debit Card,45
+O009,Isabel Rodriguez,French Onion Soup,1,8.99,2024-09-12,Delivered,Cafe Bistro,Credit Card,20
+O010,Jack Thompson,BBQ Ribs,1,22.99,2024-09-11,Delivered,BBQ Pit,Cash,50
+O011,Karen Lee,Veggie Burger,2,17.98,2024-09-10,Delivered,Vegetarian Delight,Credit Card,35
+O012,Luis Gonzalez,Lobster Roll,1,28.99,2024-09-09,Delivered,Seafood Shack,Debit Card,25
+O013,Maria Santos,Pizza Family Special,1,32.99,2024-09-08,Delivered,Pizza Paradise,Credit Card,55
+O014,Nathan Kim,Green Curry,1,15.99,2024-09-07,Delivered,Thai Garden,Cash,40
+O015,Olivia Brown,Pancake Stack,1,9.99,2024-09-06,Delivered,Breakfast Diner,Debit Card,15
+O016,Peter Johnson,Pizza Quattro Stagioni,1,16.99,2024-09-05,Delivered,Marios Pizza Palace,Credit Card,30
+O017,Quinn Wilson,Double Cheeseburger,2,24.98,2024-09-04,Delivered,Burger Junction,Cash,28
+O018,Rachel Green,Pizza Marinara,1,11.99,2024-09-03,Delivered,Pizza Corner,Credit Card,38
+O019,Sam Miller,Sashimi Set,1,42.99,2024-09-02,Delivered,Sushi Zen,Debit Card,0
+O020,Tina Chang,Pizza Meat Lovers,1,19.99,2024-09-01,Delivered,Pizza Express,Credit Card,42

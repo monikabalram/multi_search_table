@@ -1,0 +1,16 @@
+id,name,category,price,stock,rating,brand,description,sku,weight
+P001,Pizza Margherita,Food,12.99,45,4.5,Italian Kitchen,Classic pizza with tomatoes and mozzarella,IK-PM-001,0.8
+P002,Wireless Mouse,Electronics,29.00,200,4.2,TechCorp,Ergonomic wireless mouse with USB receiver,TC-WM-002,0.2
+P003,Pizza Pepperoni,Food,14.99,30,4.8,Italian Kitchen,Pepperoni pizza with mozzarella cheese,IK-PP-003,0.9
+P004,Gaming Keyboard,Electronics,89.00,67,4.3,GamerGear,RGB mechanical gaming keyboard,GG-GK-004,1.2
+P005,Pizza Hawaiian,Food,15.99,25,4.1,Tropical Bites,Pizza with ham and pineapple,TB-PH-005,0.9
+P006,Laptop Pro,Electronics,1299.99,15,4.7,TechCorp,High-performance laptop for professionals,TC-LP-006,2.1
+P007,Coffee Beans,Food,24.99,100,4.6,Mountain Roast,Premium organic coffee beans,MR-CB-007,1.0
+P008,Gaming Monitor,Electronics,399.99,35,4.8,DisplayTech,27-inch 4K gaming monitor,DT-GM-008,5.2
+P009,Pasta Carbonara,Food,13.49,60,4.4,Italian Kitchen,Creamy pasta with bacon and eggs,IK-PC-009,0.7
+P010,Smartphone,Electronics,699.99,50,4.5,TechCorp,Latest model smartphone with advanced camera,TC-SP-010,0.3
+P011,Desk Chair,Furniture,199.99,40,4.2,OfficeComfort,Ergonomic office chair with lumbar support,OC-DC-011,15.0
+P012,Pizza Vegetarian,Food,13.99,35,4.3,Garden Fresh,Pizza loaded with fresh vegetables,GF-PV-012,0.8
+P013,Headphones Pro,Audio,199.99,80,4.6,SoundWave,Noise-cancelling wireless headphones,SW-HP-013,0.4
+P014,Standing Desk,Furniture,449.99,20,4.7,OfficeComfort,Height-adjustable standing desk,OC-SD-014,25.0
+P015,Energy Drink,Beverages,2.99,300,3.9,PowerBoost,High-caffeine energy drink,PB-ED-015,0.5
