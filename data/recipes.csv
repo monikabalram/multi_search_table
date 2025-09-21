@@ -1,0 +1,16 @@
+id,name,category,difficulty,prep_time,cook_time,serves,ingredients,type,calories_per_serving
+RC001,Homemade Pizza Dough,Italian,Medium,30,0,4,flour yeast water salt olive oil,Base,220
+RC002,Chocolate Cake,Dessert,Hard,45,60,8,chocolate flour eggs sugar butter vanilla,Dessert,450
+RC003,Pizza Sauce,Italian,Easy,15,20,4,tomatoes garlic basil oregano salt,Sauce,35
+RC004,Caesar Salad,Salad,Easy,15,0,2,lettuce croutons parmesan dressing anchovy,Salad,280
+RC005,Pizza Margherita Recipe,Italian,Medium,20,15,2,pizza dough tomatoes mozzarella basil olive oil,Main,320
+RC006,Beef Tacos,Mexican,Medium,25,20,4,ground beef tortillas lettuce cheese tomatoes onion,Main,280
+RC007,Chicken Stir Fry,Asian,Easy,20,15,3,chicken vegetables soy sauce garlic ginger oil,Main,250
+RC008,Pasta Carbonara,Italian,Medium,10,15,4,pasta eggs bacon parmesan black pepper,Main,520
+RC009,Vegetable Soup,Soup,Easy,20,40,6,vegetables broth herbs onion garlic celery,Soup,120
+RC010,Grilled Salmon,Seafood,Medium,15,20,2,salmon lemon herbs olive oil salt pepper,Main,350
+RC011,Banana Bread,Dessert,Easy,15,60,8,bananas flour sugar eggs butter baking soda,Dessert,280
+RC012,Greek Salad,Salad,Easy,15,0,4,tomatoes cucumber olives feta cheese olive oil,Salad,180
+RC013,Chicken Pizza,Italian,Medium,25,18,3,pizza dough chicken cheese tomato sauce herbs,Main,380
+RC014,Mushroom Risotto,Italian,Hard,10,45,4,rice mushrooms broth onion wine parmesan butter,Main,340
+RC015,Apple Pie,Dessert,Hard,60,50,8,apples flour butter sugar cinnamon nutmeg,Dessert,420

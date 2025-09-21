@@ -1,0 +1,16 @@
+id,name,cuisine,rating,location,specialty,price_range,delivery,phone,established
+R001,Marios Pizza Palace,Italian,4.7,Downtown,Wood-fired pizza,$$,Yes,555-0101,2015
+R002,Burger Junction,American,4.2,Mall District,Gourmet burgers,$$,Yes,555-0102,2018
+R003,Pizza Corner,Italian,4.5,University Area,Student pizza deals,$,Yes,555-0103,2020
+R004,Sushi Zen,Japanese,4.8,Business District,Fresh sashimi,$$$,No,555-0104,2012
+R005,Pizza Express,Italian,4.0,Suburbs,Fast delivery pizza,$,Yes,555-0105,2019
+R006,Taco Fiesta,Mexican,4.4,Downtown,Authentic tacos,$$,Yes,555-0106,2017
+R007,The Steakhouse,American,4.9,Business District,Prime steaks,$$$,No,555-0107,2010
+R008,Noodle House,Asian,4.3,Chinatown,Hand-pulled noodles,$$,Yes,555-0108,2016
+R009,Cafe Bistro,French,4.6,Arts District,Classic French cuisine,$$$,Yes,555-0109,2014
+R010,BBQ Pit,American,4.5,Industrial Area,Smoked meats,$$,Yes,555-0110,2021
+R011,Vegetarian Delight,Vegetarian,4.2,Health District,Organic vegetables,$$,Yes,555-0111,2020
+R012,Seafood Shack,Seafood,4.7,Harbor District,Fresh catch daily,$$$,Yes,555-0112,2013
+R013,Pizza Paradise,Italian,4.1,Shopping Center,Family-style pizza,$$,Yes,555-0113,2022
+R014,Thai Garden,Thai,4.6,Cultural District,Authentic Thai curry,$$,Yes,555-0114,2018
+R015,Breakfast Diner,American,4.0,Highway District,All-day breakfast,$,Yes,555-0115,2011
